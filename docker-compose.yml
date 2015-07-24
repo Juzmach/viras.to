@@ -1,9 +1,3 @@
-proxy:
-  image: jwilder/nginx
-  volumes:
-    - /var/run/docker.sock:/tmp/docker.sock:ro
-  ports:
-    - 80:80
 keskus:
   build: ./keskus/
   environment:
