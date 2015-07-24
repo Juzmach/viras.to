@@ -1,0 +1,14 @@
+proxy:
+  image: jwilder/nginx
+  volumes:
+    - /var/run/docker.sock:/tmp/docker.sock:ro
+  ports:
+    - 80:80
+keskus:
+  build: ./keskus/
+  environment:
+    VIRTUAL_HOST:keskus.viras.to
+hyvinvointi:
+  build: ./hyvinvointi/
+  environment:
+    VIRTUAL_HOST:hyvinvointi.viras.to
