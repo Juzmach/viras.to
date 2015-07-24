@@ -7,8 +7,8 @@ proxy:
 keskus:
   build: ./keskus/
   environment:
-    VIRTUAL_HOST:keskus.viras.to
+    - VIRTUAL_HOST:keskus.viras.to
 hyvinvointi:
   build: ./hyvinvointi/
   environment:
-    VIRTUAL_HOST:hyvinvointi.viras.to
+    - VIRTUAL_HOST:hyvinvointi.viras.to
